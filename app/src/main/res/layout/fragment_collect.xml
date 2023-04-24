@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:paddingBottom="10dp"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:layout_height="match_parent" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:background="@drawable/edge1"
+                  android:padding="10dp"
+                  android:orientation="vertical">
+        <GridView android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:id="@+id/collect_lv"
+                  android:layout_weight="1"
+                  android:numColumns="auto_fit"
+                  android:verticalSpacing="10dp"
+                  android:horizontalSpacing="10dp"
+                  android:padding="5dp"
+                  android:layout_gravity="center"/>
+        <TextView android:layout_width="match_parent" android:layout_height="40dp"
+                  android:text="ID最多收藏10个，请注意！\n长按取消"
+                  android:textColor="@color/black"
+                  android:textSize="15sp"
+                  android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

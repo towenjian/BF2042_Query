@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="10dp"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              tools:context=".fragment.HisIDFragment">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:background="@drawable/edge1"
+                  android:padding="10dp"
+                  android:orientation="vertical">
+        <GridView android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:layout_gravity="center"
+                  android:id="@+id/fragment_hisid"
+                  android:horizontalSpacing="10dp"
+                  android:verticalSpacing="10dp"
+                  android:padding="5dp"
+                  android:numColumns="auto_fit"
+                  android:layout_weight="1"
+        />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="历史ID仅显示20个，请注意"
+                  android:gravity="center"
+                  android:textColor="@color/black"/>
+    </LinearLayout>
+</LinearLayout>

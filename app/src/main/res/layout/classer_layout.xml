@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+android:orientation="vertical">
+    <View android:layout_width="match_parent" android:layout_height="5dp"
+          android:background="@color/blue1"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/classer_name"
+                  android:text="maikaai1"
+                  android:textStyle="bold"
+                  android:textSize="20sp"
+                  android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:orientation="horizontal">
+        <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                     android:gravity="center"
+                     android:stretchColumns="1"
+                     android:layout_weight="1">
+            <TableRow>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="击杀数:"
+                          android:gravity="center"
+                          android:textColor="@color/black"
+                          android:textSize="15sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:id="@+id/classer_kills"
+                          android:textSize="15sp"
+                          android:text="111"
+                          android:textColor="@color/blue1"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="KPM:"
+                          android:gravity="center"
+                          android:textColor="@color/black"
+                          android:textSize="15sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:id="@+id/classer_kpm"
+                          android:textSize="15sp"
+                          android:text="111"
+                          android:textColor="@color/blue1"/>
+            </TableRow>
+        </TableLayout>
+        <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                     android:gravity="center"
+                     android:layout_weight="1">
+            <TableRow>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="KD:"
+                          android:gravity="center"
+                          android:textColor="@color/black"
+                          android:textSize="15sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:id="@+id/classer_kd"
+                          android:textSize="15sp"
+                          android:text="111"
+                          android:textColor="@color/blue1"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="游戏时间:"
+                          android:gravity="center"
+                          android:textColor="@color/black"
+                          android:textSize="15sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:id="@+id/classer_time"
+                          android:textSize="15sp"
+                          android:text="111"
+                          android:textColor="@color/blue1"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

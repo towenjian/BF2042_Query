@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<!--    <View android:layout_width="match_parent" android:layout_height="5dp"-->
+<!--          android:background="@color/blue1"/>-->
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:background="@color/blue1"
+              android:orientation="horizontal">
+    <TextView android:layout_width="wrap_content" android:layout_height="50dp"
+              android:id="@+id/weapons_name"
+              android:gravity="center_vertical|left"
+              android:layout_weight="1"
+              android:text="12AUTO"
+              android:textColor="@color/black"
+              android:textSize="20sp"
+              android:textStyle="bold"/>
+    <ImageView android:layout_width="100dp" android:layout_height="50dp"
+               android:background="@color/blue1"
+               android:id="@+id/weapons_img"/>
+</LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="3dp"
+          android:background="#a4b0be"/>\
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:orientation="horizontal">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:layout_weight="1">
+            <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:stretchColumns="1">
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="KPM:"
+                              android:gravity="center"
+                              android:textSize="20sp"
+                              android:textColor="@color/black"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/weapons_kpm"
+                              android:text="111"
+                              android:textSize="20sp"
+                              android:textColor="@color/blue1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="爆头率:"
+                              android:gravity="center"
+                              android:textSize="20sp"
+                              android:textColor="@color/black"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/weapons_headkills"
+                              android:text="111"
+                              android:textSize="20sp"
+                              android:textColor="@color/blue1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="爆头击杀:"
+                              android:textSize="20sp"
+                              android:textColor="@color/black"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/weapons_headshotKill"
+                              android:text="111"
+                              android:textSize="20sp"
+                              android:textColor="@color/blue1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="开火次数:"
+                              android:gravity="center"
+                              android:textSize="20sp"
+                              android:textColor="@color/black"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/weapons_shotsFired"
+                              android:text="111"
+                              android:textSize="20sp"
+                              android:textColor="@color/blue1"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:gravity="center">
+            <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:stretchColumns="1">
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="命中率:"
+                              android:gravity="center"
+                              android:textSize="20sp"
+                              android:textColor="@color/black"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/weapons_accuracy"
+                              android:text="111"
+                              android:textSize="20sp"
+                              android:textColor="@color/blue1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="击杀数:"
+                              android:gravity="center"
+                              android:textSize="20sp"
+                              android:textColor="@color/black"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/weapons_kill"
+                              android:text="111"
+                              android:textSize="20sp"
+                              android:textColor="@color/blue1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="伤害量:"
+                              android:gravity="center"
+                              android:textSize="20sp"
+                              android:textColor="@color/black"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/weapons_damage"
+                              android:text="111"
+                              android:textSize="20sp"
+                              android:textColor="@color/blue1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="装备时间:"
+                              android:textSize="20sp"
+                              android:textColor="@color/black"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/weapons_time"
+                              android:text="111"
+                              android:textSize="20sp"
+                              android:textColor="@color/blue1"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

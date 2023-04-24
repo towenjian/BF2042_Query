@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="text1">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="datas">
+        <item name="android:textColor">#16fde0</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="weapons_item">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#495057</item>
+    </style>
+    <style name="editor_in">//输入限制
+        <item name="android:digits">1234567890abcdefghijklnmopqrstuvwxyzABCDEFGHIJKLNMOPQRSTUVWXYZ_-[]</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+<!--        <item name="windowActionBar">false</item>-->
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="popwindow_anim_style" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--    <View android:layout_width="match_parent" android:layout_height="5dp"-->
+    <!--          android:background="@color/blue1"/>-->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:background="@color/blue1"
+                  android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="50dp"
+                  android:id="@+id/veh_name"
+                  android:gravity="center_vertical|left"
+                  android:layout_weight="1"
+                  android:text="TEST"
+                  android:textColor="@color/black"
+                  android:textSize="20sp"
+                  android:textStyle="bold"/>
+        <ImageView android:layout_width="100dp" android:layout_height="50dp"
+                   android:background="@color/blue1"
+                   android:id="@+id/veh_img"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="3dp"
+          android:background="#a4b0be"/>\
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:orientation="horizontal">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:layout_weight="1">
+            <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:stretchColumns="1">
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="KPM:"
+                              android:gravity="center"
+                              android:textSize="20sp"
+                              android:textColor="@color/black"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/veh_kpm"
+                              android:text="111"
+                              android:textSize="20sp"
+                              android:textColor="@color/blue1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="伤害量:"
+                              android:gravity="center"
+                              android:textSize="20sp"
+                              android:textColor="@color/black"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/veh_damage"
+                              android:text="111"
+                              android:textSize="20sp"
+                              android:textColor="@color/blue1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="创碎人数:"
+                              android:textSize="20sp"
+                              android:textColor="@color/black"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/veh_roadkill"
+                              android:text="111"
+                              android:textSize="20sp"
+                              android:textColor="@color/blue1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="摧毁次数:"
+                              android:gravity="center"
+                              android:textSize="20sp"
+                              android:textColor="@color/black"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/veh_ch"
+                              android:text="111"
+                              android:textSize="20sp"
+                              android:textColor="@color/blue1"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:gravity="center">
+            <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:stretchColumns="1">
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="击杀数:"
+                              android:gravity="center"
+                              android:textSize="20sp"
+                              android:textColor="@color/black"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/veh_kills"
+                              android:text="111"
+                              android:textSize="20sp"
+                              android:textColor="@color/blue1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="驾驶距离:"
+                              android:gravity="center"
+                              android:textSize="20sp"
+                              android:textColor="@color/black"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/veh_distance"
+                              android:text="111"
+                              android:textSize="20sp"
+                              android:textColor="@color/blue1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="协助击杀:"
+                              android:gravity="center"
+                              android:textSize="20sp"
+                              android:textColor="@color/black"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/veh_assists"
+                              android:text="111"
+                              android:textSize="20sp"
+                              android:textColor="@color/blue1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="驾驶时间:"
+                              android:textSize="20sp"
+                              android:textColor="@color/black"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/veh_time"
+                              android:text="111"
+                              android:textSize="20sp"
+                              android:textColor="@color/blue1"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

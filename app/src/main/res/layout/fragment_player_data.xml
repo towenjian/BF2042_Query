@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+              android:padding="5dp"
+             android:layout_height="wrap_content"
+             tools:context=".fragment.PlayerDataFragment">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="260dp"
+                  android:orientation="vertical"
+                  android:background="@drawable/edge1"
+                  android:padding="1dp"
+                  android:gravity="center">
+        <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:gravity="center">
+            <TableRow android:gravity="center">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="击杀数"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/pkill"
+                              android:text="1111"
+                              style="@style/datas"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="死亡数"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/death"
+                              style="@style/datas"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:gravity="center"
+                              android:layout_weight="1"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="KD"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/KD"
+                              style="@style/datas"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="场均击杀"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/Kdeath"
+                              style="@style/datas"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:gravity="center">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="爆头数"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/killshots"
+                              style="@style/datas"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="爆头率"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/headshots"
+                              style="@style/datas"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="KPM"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/KPM"
+                              style="@style/datas"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="分钟伤害"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/dmg"
+                              style="@style/datas"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:gravity="center">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="命中率"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/acuracy"
+                              style="@style/datas"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="每局伤害"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/damagePerMinute"
+                              style="@style/datas"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="最佳专家"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/classes"
+                              style="@style/datas"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="维修数"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/repairs"
+                              style="@style/datas"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:gravity="center">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="游戏时间"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/time"
+                              android:text="144小时"
+                              style="@style/datas"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="胜率"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/win"
+                              style="@style/datas"/>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

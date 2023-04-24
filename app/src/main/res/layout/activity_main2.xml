@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+              android:orientation="vertical"
+            android:layout_height="match_parent">
+    <include layout="@layout/main2_titlebar"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:background="@drawable/jianbian"
+                      android:orientation="horizontal">
+            <ImageView android:layout_width="70dp" android:layout_height="70dp"
+                       android:src="@drawable/loading"
+                       android:padding="5dp"
+                       android:id="@+id/playerImg"
+            />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="70dp"
+                          android:orientation="vertical"
+                          android:layout_weight="1">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content" android:layout_height="30dp"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:text="Hello!"
+                              android:textStyle="bold"
+                              android:textColor="@color/black"
+                              android:textSize="20sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="30dp"
+                              android:id="@+id/welcome"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:textStyle="bold"
+                              android:textColor="@color/black"
+                              android:textSize="20sp"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="10dp"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="30dp"
+                              android:orientation="horizontal">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="30dp"
+                                  android:orientation="horizontal"
+                                  android:gravity="center"
+                                  android:padding="5dp">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="20dp"
+                                      android:orientation="horizontal"
+                                      android:background="@drawable/yuan"
+                                      android:gravity="center">
+                            <TextView android:layout_width="wrap_content" android:layout_height="20dp"
+                                      android:text="MVP数:"
+                                      android:textColor="@color/black"
+                                      android:textSize="15sp"
+                                      android:gravity="center"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="20dp"
+                                      android:id="@+id/mvp"
+                                      android:text="8"
+                                      android:textSize="15sp"
+                                      android:textColor="@color/black"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="30dp"
+                                  android:gravity="center"
+                                  android:orientation="horizontal"
+                                  android:padding="5dp">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="20dp"
+                                      android:orientation="horizontal"
+                                      android:background="@drawable/yuan"
+                                      android:gravity="center">
+                            <TextView android:layout_width="wrap_content" android:layout_height="20dp"
+                                      android:text="联ban查询:"
+                                      android:textColor="@color/black"
+                                      android:textSize="15sp"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="20dp"
+                                      android:id="@+id/lb"
+                                      android:text="100"
+                                      android:textSize="15sp"
+                                      android:textColor="@color/black"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="30dp"
+                                  android:orientation="horizontal"
+                                  android:gravity="center"
+                                  android:padding="5dp">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="20dp"
+                                      android:orientation="horizontal"
+                                      android:background="@drawable/yuan"
+                                      android:gravity="center">
+                            <TextView android:layout_width="wrap_content" android:layout_height="20dp"
+                                      android:text="等级:"
+                                      android:textColor="@color/black"
+                                      android:textSize="15sp"
+                                      android:gravity="center"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="20dp"
+                                      android:id="@+id/xpD"
+                                      android:text="8"
+                                      android:textSize="15sp"
+                                      android:textColor="@color/black"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ToggleButton android:layout_width="30dp" android:layout_height="30dp"
+                          android:id="@+id/sc"
+                          android:layout_marginTop="40dp"
+                          android:textOn=""
+                          android:textOff=""
+                          android:background="@drawable/togglebutton"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="10dp"
+                    android:background="#ced4da"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:gravity="center">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:id="@+id/InfantryData"
+                                  android:layout_weight="1"
+                                  android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:text="步战数据"
+                                  android:textColor="@color/black"
+                                  android:textSize="20sp"/>
+                        <View android:layout_width="match_parent" android:layout_height="3dp"
+                              android:background="@color/black"
+                              android:id="@+id/InfantryData_view"
+                              android:layout_marginRight="15dp"
+                              android:layout_marginLeft="15dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:orientation="vertical"
+                                  android:gravity="center"
+                                  android:id="@+id/PlayerData">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:layout_weight="1"
+                                  android:text="基本数据"
+                                  android:textColor="@color/black"
+                                  android:textSize="20sp"/>
+                        <View android:layout_width="match_parent" android:layout_height="3dp"
+                              android:background="@color/blue1"
+                              android:id="@+id/PlayerData_view"
+                              android:layout_marginRight="15dp"
+                              android:layout_marginLeft="15dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:orientation="vertical"
+                                  android:gravity="center"
+                                  android:id="@+id/VehiclesData">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:gravity="center"
+                                  android:text="载具数据"
+                                  android:textColor="@color/black"
+                                  android:textSize="20sp"/>
+                        <View android:layout_width="match_parent" android:layout_height="3dp"
+                              android:background="@color/black"
+                              android:id="@+id/VehiclesData_view"
+                              android:layout_marginRight="15dp"
+                              android:layout_marginLeft="15dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <androidx.viewpager.widget.ViewPager android:layout_width="match_parent"
+                                                     android:layout_height="270dp"
+                                                     android:id="@+id/player_data"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="20dp"
+                              android:orientation="horizontal"
+                              android:gravity="center"
+                              android:background="#ced4da">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:textSize="10sp"
+                              android:text="详细数据"/>
+                </LinearLayout>
+                <ListView android:layout_width="match_parent" android:layout_height="325dp"
+                          android:layout_weight="1"
+                          android:id="@+id/listview"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="等级显示PRO为100级以上，由于对100级以上的等级增加规律不太清楚，所以只能简略为PRO,如果你知道规律可以到开黑q群：810981161告知"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

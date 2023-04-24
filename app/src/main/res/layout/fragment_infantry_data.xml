@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:padding="5dp"
+              android:layout_height="wrap_content"
+              tools:context=".fragment.PlayerDataFragment">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="260dp"
+                  android:orientation="vertical"
+                  android:background="@drawable/edge1"
+                  android:padding="1dp"
+                  android:gravity="center">
+        <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:gravity="center">
+            <TableRow android:gravity="center">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="总击杀数"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/kill"
+                              android:text="1111"
+                              style="@style/datas"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="枪械击杀"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/wkills"
+                              style="@style/datas"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:gravity="center"
+                              android:layout_weight="1"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="装备击杀"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/bkills"
+                              style="@style/datas"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:gravity="center">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="射击次数"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/shots"
+                              style="@style/datas"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="急救次数"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/revives"
+                              style="@style/datas"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="治疗次数"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/heals"
+                              style="@style/datas"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:gravity="center">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:layout_weight="1"
+                                  android:gravity="center"
+                                  android:background="@drawable/edge">
+                        <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+                                  style="@style/text"
+                                  android:text="KD"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:id="@+id/pKD"
+                                  style="@style/datas"/>
+                </LinearLayout>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:layout_weight="1"
+                                  android:gravity="center"
+                                  android:background="@drawable/edge">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  style="@style/text"
+                                  android:text="命中率"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:id="@+id/accuracy"
+                                  style="@style/datas"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="KPM"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/KPM"
+                              style="@style/datas"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:gravity="center">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="载具摧毁数"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/vehiclesDestroyed"
+                              style="@style/datas"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:background="@drawable/edge">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              style="@style/text"
+                              android:text="游戏时间"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/time"
+                              android:text="144小时"
+                              style="@style/datas"/>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>
